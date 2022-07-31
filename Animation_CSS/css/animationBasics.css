@@ -1,0 +1,37 @@
+#box{
+    width:100px;
+    height: 100px;
+    background: red;
+    animation: toggleColors 2000ms linear infinite;
+    /* speed up at the end
+    animation: toggleColor 2000ms ease-in infinite
+    animation: toggleColor 2000ms ease-out infinite
+    animation: toggleColor 2000ms ease-in-out infinite*/
+
+    position: absolute;
+    top: 0px;
+}
+
+@keyframes toggleColors{
+    0%,100%{
+        background: red;
+    }
+    29.9%{
+        background: red;
+    }
+
+    55%{
+        background: black;
+    }
+    60%{
+        background: red;
+
+    }
+
+    90%{
+        background:red;
+        top:200px;
+    }
+
+}
+
